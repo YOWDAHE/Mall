@@ -195,27 +195,62 @@ const OrderHistoryPage = () => {
 
         <div className="flex flex-col items-center w-full" >
           <Text
-            className="m-auto text-center text-red_600 w-auto"
-            as="h2"
-            variant="h2"
+            className="font-extrabold m-auto text-center text-red_600 w-auto"
+            as="h5"
+            variant="h5"
           >
             SPECIAL FOR YOU
           </Text>
 
-          <div className="w-full" style={{
+          <div className="w-full flex flex-col items-center pt-10" style={{
             backgroundImage: "url('images/img_group13.png')",
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}>
 
-            <div className=" w-full relative h-[100px]">
+            <div className=" w-full relative h-[600px]">
               {/* top content */}
-              <div className="absolute w-full flex justify-center">
+              <div className="absolute w-full flex flex-col items-center">
+                <div className="absolute bg-gray-200 pt-[300px] pb-[70px] w-[300px] rounded-t-[200px] rounded-b-[60px]">
+                  <div className="flex flex-col h-full items-center justify-end mt-auto mx-auto w-full">
+                    <Text
+                      className="text-black_900 text-center w-auto text-3xl"
+                      as="h4"
+                      variant="h4"
+                    >
+                      KITFO
+                    </Text>
+                    <Text
+                      className="font-normal text-black_900 text-center w-auto text-xl"
+                      as="h6"
+                      variant="h6"
+                    >
+                      ABERUS KITFO
+                    </Text>
+                    <div className="flex flex-col items-center justify-start mt-3.5  md:w-full">
+                      <Text
+                        className="font-normal line-through text-black_900 text-center w-full text-lg"
+                        as="h6"
+                        variant="h6"
+                      >
+                        350 BIRR
+                      </Text>
+                      <Text
+                        className="font-bold text-black_900 text-center w-full text-lg"
+                        as="h6"
+                        variant="h6"
+                      >
+                        250 BIRR
+                      </Text>
+                    </div>
+                  </div>
+                </div>
                 <Img
                   src="images/img_dishsplashscreen2_1.png"
                   className="h-[300px] m-auto rotate-[-1deg] rounded-[50%]"
                   alt="dishsplashscree_Seven"
                 />
+                
               </div>
               {/* second contents */}
               <div className="absolute w-full flex justify-between mt-[260px] px-14">
@@ -245,40 +280,7 @@ const OrderHistoryPage = () => {
               </div>
             </div>
 
-            <div className="bg-gray-400 pt-[230px] w-[300px] rounded-t-[60px]">
-              <div className="flex flex-col h-full items-center justify-start mb-[194px] mt-auto mx-auto w-full">
-                <Text
-                  className="text-black_900 text-center w-auto text-3xl"
-                  as="h4"
-                  variant="h4"
-                >
-                  KITFO
-                </Text>
-                <Text
-                  className="font-normal text-black_900 text-center w-auto text-xl"
-                  as="h6"
-                  variant="h6"
-                >
-                  ABERUS KITFO
-                </Text>
-                <div className="flex flex-col items-center justify-start mt-3.5  md:w-full">
-                  <Text
-                    className="font-normal line-through text-black_900 text-center w-full text-lg"
-                    as="h6"
-                    variant="h6"
-                  >
-                    350 BIRR
-                  </Text>
-                  <Text
-                    className="font-bold text-black_900 text-center w-full text-lg"
-                    as="h6"
-                    variant="h6"
-                  >
-                    250 BIRR
-                  </Text>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
 
@@ -398,162 +400,8 @@ const OrderHistoryPage = () => {
               </Text> */}
             </div>
           </div>
-          <div className="mt-[39px] overflow-x-auto w-full">
-            <div className="md:h-[1293px] sm:h-[826px] h-[948px] overflow-auto relative w-full">
-              <div className="absolute md:h-[1293px] sm:h-[826px] h-[948px] inset-y-[0] my-auto right-[0] w-[96%] md:w-full">
-                <div className="md:h-[1293px] sm:h-[826px] h-[948px] m-auto w-full">
-                  <div className="md:h-[1293px] sm:h-[826px] h-[948px] m-auto w-full">
-                    <div className="absolute bottom-[0] flex md:h-[1293px] sm:h-[826px] h-[828px] inset-x-[0] justify-end mx-auto w-full">
-                      {/* <div className="flex flex-col h-full items-center justify-start mb-[194px] mt-auto mx-auto w-[16%]">
-                        <Text
-                          className="text-black_900 text-center w-auto"
-                          as="h3"
-                          variant="h3"
-                        >
-                          KITFO
-                        </Text>
-                        <Text
-                          className="font-normal not-italic text-black_900 text-center w-auto"
-                          as="h5"
-                          variant="h5"
-                        >
-                          ABERUS KITFO
-                        </Text>
-                        <div className="flex flex-col gap-[7px] items-center justify-start mt-3.5 w-auto md:w-full">
-                          <Text
-                            className="font-normal line-through not-italic text-black_900 text-center w-auto"
-                            as="h5"
-                            variant="h5"
-                          >
-                            350 BIRR{" "}
-                          </Text>
-                          <Text
-                            className="font-bold text-black_900 text-center w-auto"
-                            as="h5"
-                            variant="h5"
-                          >
-                            250 BIRR{" "}
-                          </Text>
-                        </div>
-                      </div> */}
-                      <div
-                        className="absolute bg-cover bg-no-repeat flex flex-col h-full inset-[0] items-center justify-center m-auto p-12 md:px-10 sm:px-5 w-full"
-                        style={{
-                          backgroundImage: "url('images/img_group13.png')",
-                        }}
-                      >
-                        {/* <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mb-[257px] w-[86%] md:w-full">
-                          <div className="flex flex-col h-[428px] sm:h-auto items-center justify-start mb-11 w-[428px] sm:w-full">
-                            <Img
-                              src="images/img_dishsplashscreen2_428x428.png"
-                              className="h-[428px] md:h-auto rotate-[-1deg] rounded-[50%] w-[428px]"
-                              alt="dishsplashscree_Four"
-                            />
-                          </div>
-                          <div className="h-[428px] md:mt-0 mt-11 relative w-[428px] sm:w-full">
-                            <Img
-                              src="images/img_dishsplashscreen2_1.png"
-                              className="h-[428px] m-auto rotate-[-1deg] rounded-[50%] w-[428px]"
-                              alt="dishsplashscree_Five"
-                            />
-                            <Img
-                              src="images/img_image1_411x428.png"
-                              className="absolute h-[411px] inset-[0] justify-center m-auto rounded-[50%] w-full"
-                              alt="imageOne_Two"
-                            />
-                          </div>
-                        </div> */}
-                      </div>
-                    </div>
-                    <div className="absolute flex flex-col h-[517px] sm:h-auto inset-x-[0] items-center justify-start mx-auto top-[0] w-[517px]">
-                      <Img
-                        src="images/img_dishsplashscreen2_517x517.png"
-                        className="h-[517px] md:h-auto rotate-[-1deg] rounded-[50%] w-[517px]"
-                        alt="dishsplashscree_Six"
-                      />
-                    </div>
-                  </div>
-                  {/* <div className="absolute bottom-[11%] flex md:flex-col flex-row gap-[13px] items-start justify-center right-[9%] w-[55%]">
-                    <div className="bg-white_A700 flex flex-col items-end justify-end md:mt-0 mt-[169px] p-9 sm:px-5 rounded-[69px] w-[54%] md:w-full">
-                      <div className="flex flex-col items-start justify-start mb-[29px] mt-[114px] pb-[19px] px-[19px] w-[85%] md:w-full">
-                        <Text
-                          className="md:ml-[0] ml-[47px] text-black_900 text-center w-auto"
-                          as="h3"
-                          variant="h3"
-                        >
-                          {" "}
-                          KITFO
-                        </Text>
-                        <Text
-                          className="font-normal mt-[3px] not-italic text-black_900 text-center w-auto"
-                          as="h5"
-                          variant="h5"
-                        >
-                          ABERUS KITFO
-                        </Text>
-                        <div className="flex flex-col gap-2.5 items-center justify-start md:ml-[0] ml-[50px] mt-[17px] w-auto md:w-full">
-                          <Text
-                            className="font-normal line-through not-italic text-black_900 text-center w-auto"
-                            as="h5"
-                            variant="h5"
-                          >
-                            350 BIRR{" "}
-                          </Text>
-                          <Text
-                            className="font-bold text-black_900 text-center w-auto"
-                            as="h5"
-                            variant="h5"
-                          >
-                            250 BIRR{" "}
-                          </Text>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="h-[428px] relative w-[428px] sm:w-full">
-                      <Img
-                        src="images/img_dishsplashscreen2_1.png"
-                        className="h-[428px] m-auto rotate-[-1deg] rounded-[50%] w-[428px]"
-                        alt="dishsplashscree_Seven"
-                      />
-                      <Img
-                        src="images/img_image1_411x428.png"
-                        className="absolute h-[411px] inset-[0] justify-center m-auto rounded-[50%] w-full"
-                        alt="imageOne_Three"
-                      />
-                    </div>
-                  </div> */}
-                </div>
-                <div className="absolute flex flex-col h-[428px] sm:h-auto items-center justify-start left-[10%] top-[18%] w-[428px]">
-                  <Img
-                    src="images/img_dishsplashscreen2_428x428.png"
-                    className="h-[428px] md:h-auto rotate-[-1deg] rounded-[50%] w-[428px]"
-                    alt="dishsplashscree_Eight"
-                  />
-                </div>
-              </div>
-              <div className="absolute bottom-[12%] flex flex-col h-[331px] items-center justify-start left-[0] w-[331px]">
-                <Img
-                  src="images/img_dishsplashscreen2_331x331.png"
-                  className="h-[331px] md:h-auto rotate-[-1deg] rounded-[50%] w-[331px]"
-                  alt="dishsplashscree_Ten"
-                />
-              </div>
-              <div className="absolute bottom-[12%] flex flex-col h-[331px] items-center justify-start right-[0] w-[331px]">
-                <Img
-                  src="images/img_dishsplashscreen2_2.png"
-                  className="h-[331px] md:h-auto rotate-[-1deg] rounded-[50%] w-[331px]"
-                  alt="dishsplashscree_Eleven"
-                />
-              </div>
-              <div className="absolute bottom-[12%] flex flex-col h-[331px] items-center justify-start right-[0] w-[331px]">
-                <Img
-                  src="images/img_dishsplashscreen2_2.png"
-                  className="h-[331px] md:h-auto rotate-[-1deg] rounded-[50%] w-[331px]"
-                  alt="dishsplashscree_Twelve"
-                />
-              </div>
-            </div>
-          </div>
+
+          
           <div className="h-[123px] md:h-[211px] md:ml-[0] ml-[139px] mr-[361px] mt-[118px] relative w-[73%] md:w-full">
             <div className="h-[123px] md:h-[93px] m-auto w-full">
               <Text
