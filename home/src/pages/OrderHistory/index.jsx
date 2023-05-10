@@ -11,7 +11,7 @@ const OrderHistoryPage = () => {
 
         {/* added nav bar */}
 
-        
+
         <nav className=" h-[60px] flex flex-row w-full px-11 justify-between">
           <Img
             src="images/img_zmalllogos21.png"
@@ -54,7 +54,7 @@ const OrderHistoryPage = () => {
 
 
         {/* /end of added navbar */}
-        
+
 
         {/* welcome section */}
         <div className="bg-gray-200 md:h-[518px] h-[490px] w-full flex items-center mt-[50px]">
@@ -108,66 +108,66 @@ const OrderHistoryPage = () => {
           </div>
           <div className="w-full">
             <div className="bg-red_600 h-[450px] rounded-bl-[250px] rounded-br-none rounded-tl-[250px] rounded-tr-none w-full flex overflow-x-hidden pl-[20px]">
-                <Img
-                  src="images/img_dishsplashscreen2.png"
-                  className="h-[400px] w-[700px] m-auto object-cover rounded-full mr-[10px] "
-                  alt="dishsplashscree_Two"
-                />
-                <Img
-                  src="images/img_image1.png"
+              <Img
+                src="images/img_dishsplashscreen2.png"
+                className="h-[400px] w-[700px] m-auto object-cover rounded-full mr-[10px] "
+                alt="dishsplashscree_Two"
+              />
+              <Img
+                src="images/img_image1.png"
                 className="h-[400px] w-[400px] m-auto object-cover rounded-l-full"
-                  alt="imageOne_One"
-                />
+                alt="imageOne_One"
+              />
             </div>
           </div>
         </div>
 
-        
+
         {/* end of welcom section */}
 
-        
+
         {/* sliding cart */}
 
         <div className="h-[250px] w-full my-[100px] flex justify-evenly items-center">
           <div className="flex justify-center items-center">
             <Img
-            src="images/img_group30.svg"
-            className="h-[68px] w-[68px]"
-            alt="materialsymbol_One"
+              src="images/img_group30.svg"
+              className="h-[68px] w-[68px]"
+              alt="materialsymbol_One"
             />
           </div>
-          
+
           <div className="flex w-[60%] overflow-x-scroll scrollNone slide">
-            
+
             <Img
               src="images/img_rectangle27.png"
               className="h-[100px] object-cover  w-[180px]"
               alt="rectangleTwentySeven"
             />
-              <Img
-                src="images/img_rectangle23.png"
-                className="h-[100px] object-cover  w-[180px]"
-                alt="rectangleTwentyOne"
-              />
-              <Img
-                src="images/img_rectangle23.png"
-                className="h-[100px] justify-center object-cover  w-[180px]"
-                alt="rectangleTwentyOne_One"
-              />
-              <Img
-                src="images/img_rectangle24.png"
-                className="h-[100px] object-cover  w-[180px]"
-                alt="rectangleTwentyFour"
+            <Img
+              src="images/img_rectangle23.png"
+              className="h-[100px] object-cover  w-[180px]"
+              alt="rectangleTwentyOne"
+            />
+            <Img
+              src="images/img_rectangle23.png"
+              className="h-[100px] justify-center object-cover  w-[180px]"
+              alt="rectangleTwentyOne_One"
+            />
+            <Img
+              src="images/img_rectangle24.png"
+              className="h-[100px] object-cover  w-[180px]"
+              alt="rectangleTwentyFour"
             />
             <Img
               src="images/img_rectangle27.png"
               className="h-[100px] object-cover  w-[180px]"
               alt="rectangleTwentySeven"
             />
-              <Img
-                src="images/img_rectangle24.png"
-                className="h-[100px] justify-center object-cover  w-[180px]"
-                alt="rectangleTwentyFour_One"
+            <Img
+              src="images/img_rectangle24.png"
+              className="h-[100px] justify-center object-cover  w-[180px]"
+              alt="rectangleTwentyFour_One"
             />
             <Img
               src="images/img_rectangle23.png"
@@ -175,7 +175,7 @@ const OrderHistoryPage = () => {
               alt="rectangleTwentyOne"
             />
           </div>
-          
+
           <div className="flex justify-center items-center">
             <Img
               src="images/img_group29.svg"
@@ -183,13 +183,117 @@ const OrderHistoryPage = () => {
               alt="materialsymbol_Two"
             />
           </div>
-          
+
         </div>
+
+        {/* end sliding cart */}
+
+
+
+        {/* special offers */}
+
+
+        <div className="flex flex-col items-center w-full" >
+          <Text
+            className="m-auto text-center text-red_600 w-auto"
+            as="h2"
+            variant="h2"
+          >
+            SPECIAL FOR YOU
+          </Text>
+
+          <div className="w-full" style={{
+            backgroundImage: "url('images/img_group13.png')",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}>
+
+            <div className=" w-full relative h-[100px]">
+              {/* top content */}
+              <div className="absolute w-full flex justify-center">
+                <Img
+                  src="images/img_dishsplashscreen2_1.png"
+                  className="h-[300px] m-auto rotate-[-1deg] rounded-[50%]"
+                  alt="dishsplashscree_Seven"
+                />
+              </div>
+              {/* second contents */}
+              <div className="absolute w-full flex justify-between mt-[260px] px-14">
+                <Img
+                  src="images/img_image1_411x428.png"
+                  className="h-[240px] md:h-auto rotate-[-1deg] rounded-[50%]"
+                  alt="imageOne_Three"
+                />
+                <Img
+                  src="images/img_dishsplashscreen2_2.png"
+                  className="h-[240px] md:h-auto rotate-[-1deg] rounded-[50%]"
+                  alt="dishsplashscree_Twelve"
+                />
+              </div>
+              {/* third content */}
+              <div className="absolute w-full flex justify-evenly mt-[120px]">
+                <Img
+                  src="images/img_dishsplashscreen2_2.png"
+                  className="h-[270px] md:h-auto rotate-[-1deg] rounded-[50%]"
+                  alt="dishsplashscree_Eleven"
+                />
+                <Img
+                  src="images/img_dishsplashscreen2_2.png"
+                  className="h-[270px] md:h-auto rotate-[-1deg] rounded-[50%]"
+                  alt="dishsplashscree_Eleven"
+                />
+              </div>
+            </div>
+
+            <div className="bg-gray-400 pt-[230px] w-[300px] rounded-t-[60px]">
+              <div className="flex flex-col h-full items-center justify-start mb-[194px] mt-auto mx-auto w-full">
+                <Text
+                  className="text-black_900 text-center w-auto text-3xl"
+                  as="h4"
+                  variant="h4"
+                >
+                  KITFO
+                </Text>
+                <Text
+                  className="font-normal text-black_900 text-center w-auto text-xl"
+                  as="h6"
+                  variant="h6"
+                >
+                  ABERUS KITFO
+                </Text>
+                <div className="flex flex-col items-center justify-start mt-3.5  md:w-full">
+                  <Text
+                    className="font-normal line-through text-black_900 text-center w-full text-lg"
+                    as="h6"
+                    variant="h6"
+                  >
+                    350 BIRR
+                  </Text>
+                  <Text
+                    className="font-bold text-black_900 text-center w-full text-lg"
+                    as="h6"
+                    variant="h6"
+                  >
+                    250 BIRR
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        {/* end of special offers */}
+
+
+
 
         <div className="flex flex-col md:px-5 w-full">
           <div className="flex flex-col items-center justify-start md:ml-[0] ml-[93px] mt-[37px] w-[95%] md:w-full">
-            
-            <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[47px] w-[87%] md:w-full">
+
+            {/* <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[47px] w-[87%] md:w-full">
               <div
                 className="bg-cover bg-no-repeat flex flex-col h-[88px] items-center justify-start md:mt-0 mt-[58px] w-[88px]"
                 style={{ backgroundImage: "url('images/img_group30.svg')" }}
@@ -275,9 +379,10 @@ const OrderHistoryPage = () => {
                   alt="materialsymbol_Two"
                 />
               </div>
-            </div>
+            </div> */}
+
             <div className="md:h-[177px] h-[79px] mt-[98px] relative w-[37%] md:w-full">
-              <Text
+              {/* <Text
                 className="m-auto text-center text-red_600 w-auto"
                 as="h2"
                 variant="h2"
@@ -290,7 +395,7 @@ const OrderHistoryPage = () => {
                 variant="h2"
               >
                 SPECIAL FOR YOU
-              </Text>
+              </Text> */}
             </div>
           </div>
           <div className="mt-[39px] overflow-x-auto w-full">
@@ -299,13 +404,12 @@ const OrderHistoryPage = () => {
                 <div className="md:h-[1293px] sm:h-[826px] h-[948px] m-auto w-full">
                   <div className="md:h-[1293px] sm:h-[826px] h-[948px] m-auto w-full">
                     <div className="absolute bottom-[0] flex md:h-[1293px] sm:h-[826px] h-[828px] inset-x-[0] justify-end mx-auto w-full">
-                      <div className="flex flex-col h-full items-center justify-start mb-[194px] mt-auto mx-auto w-[16%]">
+                      {/* <div className="flex flex-col h-full items-center justify-start mb-[194px] mt-auto mx-auto w-[16%]">
                         <Text
                           className="text-black_900 text-center w-auto"
                           as="h3"
                           variant="h3"
                         >
-                          {" "}
                           KITFO
                         </Text>
                         <Text
@@ -331,14 +435,14 @@ const OrderHistoryPage = () => {
                             250 BIRR{" "}
                           </Text>
                         </div>
-                      </div>
+                      </div> */}
                       <div
                         className="absolute bg-cover bg-no-repeat flex flex-col h-full inset-[0] items-center justify-center m-auto p-12 md:px-10 sm:px-5 w-full"
                         style={{
                           backgroundImage: "url('images/img_group13.png')",
                         }}
                       >
-                        <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mb-[257px] w-[86%] md:w-full">
+                        {/* <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mb-[257px] w-[86%] md:w-full">
                           <div className="flex flex-col h-[428px] sm:h-auto items-center justify-start mb-11 w-[428px] sm:w-full">
                             <Img
                               src="images/img_dishsplashscreen2_428x428.png"
@@ -358,7 +462,7 @@ const OrderHistoryPage = () => {
                               alt="imageOne_Two"
                             />
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     <div className="absolute flex flex-col h-[517px] sm:h-auto inset-x-[0] items-center justify-start mx-auto top-[0] w-[517px]">
@@ -369,7 +473,7 @@ const OrderHistoryPage = () => {
                       />
                     </div>
                   </div>
-                  <div className="absolute bottom-[11%] flex md:flex-col flex-row gap-[13px] items-start justify-center right-[9%] w-[55%]">
+                  {/* <div className="absolute bottom-[11%] flex md:flex-col flex-row gap-[13px] items-start justify-center right-[9%] w-[55%]">
                     <div className="bg-white_A700 flex flex-col items-end justify-end md:mt-0 mt-[169px] p-9 sm:px-5 rounded-[69px] w-[54%] md:w-full">
                       <div className="flex flex-col items-start justify-start mb-[29px] mt-[114px] pb-[19px] px-[19px] w-[85%] md:w-full">
                         <Text
@@ -417,7 +521,7 @@ const OrderHistoryPage = () => {
                         alt="imageOne_Three"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="absolute flex flex-col h-[428px] sm:h-auto items-center justify-start left-[10%] top-[18%] w-[428px]">
                   <Img
@@ -426,13 +530,6 @@ const OrderHistoryPage = () => {
                     alt="dishsplashscree_Eight"
                   />
                 </div>
-              </div>
-              <div className="absolute flex flex-col h-[517px] sm:h-auto items-center justify-start right-[33%] top-[0] w-[517px]">
-                <Img
-                  src="images/img_dishsplashscreen2_517x517.png"
-                  className="h-[517px] md:h-auto rotate-[-1deg] rounded-[50%] w-[517px]"
-                  alt="dishsplashscree_Nine"
-                />
               </div>
               <div className="absolute bottom-[12%] flex flex-col h-[331px] items-center justify-start left-[0] w-[331px]">
                 <Img
@@ -464,7 +561,7 @@ const OrderHistoryPage = () => {
                 as="h1"
                 variant="h1"
               >
-                What Would You Like to Order ?
+                What Would You Like to Order ??
               </Text>
               <Img
                 src="images/img_arrowdown.svg"
