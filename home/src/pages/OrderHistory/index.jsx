@@ -2,6 +2,7 @@ import React from "react";
 
 import { Img, Text, Button, Input, List } from "components";
 import "../../styles/index.css";
+import { NavLink } from "react-router-dom";
 
 const OrderHistoryPage = () => {
   return (
@@ -40,7 +41,7 @@ const OrderHistoryPage = () => {
               News and Blogs
             </Text>
 
-            <Text className="cursor-pointer text-sm font-bold m-auto text-left text-red_600 w-auto">Sign Up</Text>
+            <NavLink className="cursor-NavLink-sm font-bold m-auto text-left text-red_600 w-auto" to="/sinUp">Sign Up</NavLink>
 
             <Button
               className=" cursor-pointer font-bold text-center text-white_A700 text-sm ml-5"
@@ -401,7 +402,7 @@ const OrderHistoryPage = () => {
             </div>
           </div>
 
-          
+
           <div className="h-[123px] md:h-[211px] md:ml-[0] ml-[139px] mr-[361px] mt-[118px] relative w-[73%] md:w-full">
             <div className="h-[123px] md:h-[93px] m-auto w-full">
               <Text
