@@ -210,13 +210,6 @@ const SignupdPagePage = () => {
           alt="profileeeOne"
         />
       </div>
-      {/* <div className="bg-white_A700 font-poppins h-[1117px] mx-auto relative w-full">
-        
-        <div className="absolute md:h-[1109px] h-[1118px] inset-[0] justify-center m-auto md:px-5 w-full">
-          
-          
-        </div>
-      </div> */}
     </div>
   );
 };

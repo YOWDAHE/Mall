@@ -3,6 +3,7 @@ import React from "react";
 import { Img, Text, Button, Input, List } from "components";
 import "../../styles/index.css";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const OrderHistoryPage = () => {
   return (
@@ -195,13 +196,18 @@ const OrderHistoryPage = () => {
 
 
         <div className="flex flex-col items-center w-full" >
-          <Text
-            className="font-extrabold m-auto text-center text-red_600 w-auto"
-            as="h5"
-            variant="h5"
+          <motion.div
+            initial={{ opacity: 0, y: 200}}
+            whileInView={{ opacity: 1, y: 0}}
           >
-            SPECIAL FOR YOU
-          </Text>
+            <Text
+              className="font-extrabold m-auto text-center text-red_600 w-auto"
+              as="h5"
+              variant="h5"
+            >
+              SPECIAL FOR YOU
+            </Text>
+          </motion.div>
 
           <div className="w-full flex flex-col items-center pt-10" style={{
             backgroundImage: "url('images/img_group13.png')",
@@ -209,7 +215,7 @@ const OrderHistoryPage = () => {
             backgroundSize: "cover",
           }}>
 
-            <div className=" w-full relative h-[600px]">
+            <motion.div className=" w-full relative h-[600px]">
               {/* top content */}
               <div className="absolute w-full flex flex-col items-center">
                 <div className="absolute bg-gray-200 pt-[300px] pb-[70px] w-[300px] rounded-t-[200px] rounded-b-[60px]">
@@ -246,15 +252,27 @@ const OrderHistoryPage = () => {
                     </div>
                   </div>
                 </div>
-                <Img
-                  src="images/img_dishsplashscreen2_1.png"
-                  className="h-[300px] m-auto rotate-[-1deg] rounded-[50%]"
-                  alt="dishsplashscree_Seven"
-                />
-                
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ delay: 0.2 }}
+                >
+
+                  <Img
+                    src="images/img_dishsplashscreen2_1.png"
+                    className="h-[300px] m-auto rotate-[-1deg] rounded-[50%]"
+                    alt="dishsplashscree_Seven"
+
+                  />
+                </motion.div>
+
               </div>
               {/* second contents */}
-              <div className="absolute w-full flex justify-between mt-[260px] px-14">
+              <motion.div className="absolute w-full flex justify-between mt-[260px] px-14"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.2 }}
+              >
                 <Img
                   src="images/img_image1_411x428.png"
                   className="h-[240px] md:h-auto rotate-[-1deg] rounded-[50%]"
@@ -265,9 +283,13 @@ const OrderHistoryPage = () => {
                   className="h-[240px] md:h-auto rotate-[-1deg] rounded-[50%]"
                   alt="dishsplashscree_Twelve"
                 />
-              </div>
+              </motion.div>
               {/* third content */}
-              <div className="absolute w-full flex justify-evenly mt-[120px]">
+              <motion.div className="absolute w-full flex justify-evenly mt-[120px]"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                
+              >
                 <Img
                   src="images/img_dishsplashscreen2_2.png"
                   className="h-[270px] md:h-auto rotate-[-1deg] rounded-[50%]"
@@ -278,10 +300,10 @@ const OrderHistoryPage = () => {
                   className="h-[270px] md:h-auto rotate-[-1deg] rounded-[50%]"
                   alt="dishsplashscree_Eleven"
                 />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            
+
           </div>
 
 
@@ -291,149 +313,25 @@ const OrderHistoryPage = () => {
         {/* end of special offers */}
 
 
+        {/* order menu */}
+
+        <div>
+
+        </div>
+
+        {/* end of order menu */}
 
 
         <div className="flex flex-col md:px-5 w-full">
-          <div className="flex flex-col items-center justify-start md:ml-[0] ml-[93px] mt-[37px] w-[95%] md:w-full">
-
-            {/* <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[47px] w-[87%] md:w-full">
-              <div
-                className="bg-cover bg-no-repeat flex flex-col h-[88px] items-center justify-start md:mt-0 mt-[58px] w-[88px]"
-                style={{ backgroundImage: "url('images/img_group30.svg')" }}
-              >
-                <Img
-                  src="images/img_group30.svg"
-                  className="h-[88px] w-[88px]"
-                  alt="materialsymbol_One"
-                />
-              </div>
-              <div className="h-[163px] md:ml-[0] ml-[159px] md:mt-0 mt-[9px] relative w-[162px]">
-                <Img
-                  src="images/img_rectangle23.png"
-                  className="h-[163px] m-auto object-cover rounded-[37px] w-[162px]"
-                  alt="rectangleTwentyThree"
-                />
-                <Img
-                  src="images/img_rectangle23.png"
-                  className="absolute h-[163px] inset-[0] justify-center m-auto object-cover rounded-[37px] w-[162px]"
-                  alt="rectangleTwentyThree_One"
-                />
-              </div>
-              <div className="h-[163px] ml-5 md:ml-[0] md:mt-0 mt-[9px] relative w-[164px]">
-                <Img
-                  src="images/img_rectangle22.png"
-                  className="h-[163px] m-auto object-cover rounded-[37px] w-[164px]"
-                  alt="rectangleTwentyTwo"
-                />
-                <Img
-                  src="images/img_rectangle22.png"
-                  className="absolute h-[163px] inset-[0] justify-center m-auto object-cover rounded-[37px] w-[164px]"
-                  alt="rectangleTwentyTwo_One"
-                />
-              </div>
-              <div className="h-[181px] md:ml-[0] ml-[66px] relative w-[182px]">
-                <Img
-                  src="images/img_rectangle27.png"
-                  className="h-[181px] m-auto object-cover rounded-[37px] w-[182px]"
-                  alt="rectangleTwentySeven"
-                />
-                <Img
-                  src="images/img_rectangle27.png"
-                  className="absolute h-[181px] inset-[0] justify-center m-auto object-cover rounded-[37px] w-[182px]"
-                  alt="rectangleTwentySeven_One"
-                />
-              </div>
-              <List
-                className="sm:flex-col flex-row gap-[35px] grid grid-cols-2 md:ml-[0] ml-[53px] md:mt-0 mt-[9px] w-1/4 md:w-full"
-                orientation="horizontal"
-              >
-                <div className="h-[163px] relative w-full">
-                  <Img
-                    src="images/img_rectangle23.png"
-                    className="h-[163px] m-auto object-cover rounded-[37px] w-[163px]"
-                    alt="rectangleTwentyOne"
-                  />
-                  <Img
-                    src="images/img_rectangle23.png"
-                    className="absolute h-[163px] inset-[0] justify-center m-auto object-cover rounded-[37px] w-[163px]"
-                    alt="rectangleTwentyOne_One"
-                  />
-                </div>
-                <div className="h-[163px] relative w-full">
-                  <Img
-                    src="images/img_rectangle24.png"
-                    className="h-[163px] m-auto object-cover rounded-[37px] w-[163px]"
-                    alt="rectangleTwentyFour"
-                  />
-                  <Img
-                    src="images/img_rectangle24.png"
-                    className="absolute h-[163px] inset-[0] justify-center m-auto object-cover rounded-[37px] w-[163px]"
-                    alt="rectangleTwentyFour_One"
-                  />
-                </div>
-              </List>
-              <div
-                className="bg-cover bg-no-repeat flex flex-col h-[88px] items-center justify-start md:ml-[0] ml-[132px] md:mt-0 mt-[58px] w-[88px]"
-                style={{ backgroundImage: "url('images/img_group29.svg')" }}
-              >
-                <Img
-                  src="images/img_group29.svg"
-                  className="h-[88px] w-[88px]"
-                  alt="materialsymbol_Two"
-                />
-              </div>
-            </div> */}
-
-            <div className="md:h-[177px] h-[79px] mt-[98px] relative w-[37%] md:w-full">
-              {/* <Text
-                className="m-auto text-center text-red_600 w-auto"
-                as="h2"
-                variant="h2"
-              >
-                SPECIAL FOR YOU
-              </Text>
-              <Text
-                className="absolute h-full inset-[0] justify-center m-auto text-center text-red_600 w-max"
-                as="h2"
-                variant="h2"
-              >
-                SPECIAL FOR YOU
-              </Text> */}
-            </div>
-          </div>
-
-
-          <div className="h-[123px] md:h-[211px] md:ml-[0] ml-[139px] mr-[361px] mt-[118px] relative w-[73%] md:w-full">
-            <div className="h-[123px] md:h-[93px] m-auto w-full">
-              <Text
-                className="absolute inset-x-[0] mx-auto text-black_900 text-left top-[0] w-max"
-                as="h1"
-                variant="h1"
-              >
-                What Would You Like to Order ??
-              </Text>
-              <Img
-                src="images/img_arrowdown.svg"
-                className="absolute bottom-[0] h-[87px] left-[35%] w-auto"
-                alt="arrowdown"
-              />
-            </div>
-            <Text
-              className="absolute inset-x-[0] mx-auto text-black_900 text-left top-[0] w-max"
-              as="h1"
-              variant="h1"
-            >
-              What Would You Like to Order ?
-            </Text>
-          </div>
+          
           <div className="flex flex-col justify-start ml-20 md:ml-[0] mt-[54px] w-[96%] md:w-full">
             <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-[96%] md:w-full">
               <div className="h-[316px] relative w-[24%] md:w-full">
-                <Img
+                {/* <Img
                   src="images/img_materialsymbol_white_a700.svg"
                   className="h-[130px] ml-auto mr-[119px] my-auto w-[130px]"
                   alt="materialsymbol_Three"
-                />
+                /> */}
                 <div className="absolute bg-red_600 flex flex-col h-full inset-[0] items-end justify-center m-auto p-[92px] md:px-10 sm:px-5 w-full">
                   <Img
                     src="images/img_materialsymbol_white_a700.svg"
