@@ -7,12 +7,12 @@ import { NavLink } from "react-router-dom";
 const SignupdPagePage = () => {
   return (
     <div className="flex ">
-      <div className="bg-red_600 flex flex-col items-center h-full justify-start p-[9px] rounded-bl-none rounded-br-[75px] rounded-tl-none rounded-tr-[75px] w-full">
+      <div className="bg-red_600 flex flex-col items-center h-[100vh] justify-start p-[9px] rounded-bl-none rounded-br-[75px] rounded-tl-none rounded-tr-[75px] w-full">
 
         {/* language selection */}
         <div className="h-16 relative w-[32%] self-start">
 
-          <select id="countries" class="border border-gray-300 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-white bg-red-600">
+          <select id="countries" className=" border-0 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white text-white bg-red-600">
             <option selected value="UK" className="text-white bg-red-600">English(UK)</option>
             <option value="US" className="text-white bg-red-600">English(US)</option>
             <option value="IT" className="text-white bg-red-600">France</option>
@@ -23,14 +23,13 @@ const SignupdPagePage = () => {
 
         <div className="flex flex-col justify-start w-[70%] pt-7">
           <Text
-            className=" text-white_A700 w-auto text-center"
-            as="h6"
-            variant="h6"
+            className=" text-white_A700 w-auto text-center text-2xl"
           >
             Register Account
           </Text>
 
-          <form method="post">
+          {/* login form */}
+          <form method="post" className="flex flex-col">
             <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
             <div class="relative mb-6">
               <span class="absolute flex items-center justify-center pointer-events-none ml-2 h-full">
@@ -82,10 +81,25 @@ const SignupdPagePage = () => {
               </span>
               <input type="tel" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-center" placeholder="" />
             </div>
+            <NavLink
+              className="text-right text-sm text-white_A700 w-auto"
+              to="/orderhistory"
+            >
+              Go to ZMall Global
+            </NavLink><br />
+            <Button
+              className="p-3 mt-5 cursor-pointer bg-gray-200 w-[32%] text-center text-red_600 sm:text-xl self-center rounded-lg font-semibold"
+              shape="RoundedBorder22"
+              size="sm"
+              variant="FillWhiteA700"
+              type="submit"
+            >
+              Verify
+            </Button>
           </form>
 
 
-          {/* <div>
+          {/*<div>
               <Text
                 className="md:ml-[0] ml-[79px] mt-[67px] text-left text-white_A700 w-auto"
                 as="h3"
@@ -170,50 +184,29 @@ const SignupdPagePage = () => {
                 </div>
               </div>
  </div>*/}
-          
-          <NavLink
-            className="text-right text-sm text-white_A700 w-auto"
-            to="/orderhistory"
-          >
-            Go to ZMall Global
-          </NavLink>
-          <Button
-            className="cursor-pointer bg-gray-200 w-[30%] text-center text-red_600 sm:text-xl self-center rounded-lg font-semibold"
-            shape="RoundedBorder22"
-            size="sm"
-            variant="FillWhiteA700"
-          >
-            Verify
-          </Button>
+
         </div>
 
 
         <div className="flex flex-row gap-[18px] items-center justify-center w-[36%] md:w-full">
           <Text
-            className="font-normal not-italic text-left text-white_A700 w-auto"
-            as="h4"
-            variant="h4"
+            className="font-normal not-italic text-left text-white_A700 w-auto text-sm mt-5"
           >
             Already have an account
           </Text>
-          <a
-            href="javascript:"
-            className="font-extrabold text-[15px] text-left text-white_A700 w-auto"
-          >
-            <Text className="">Login</Text>
-          </a>
+          <Text className="font-normal not-italic text-left text-white_A700 w-auto text-sm mt-5">Login</Text>
         </div>
 
       </div>
-      <div className="w-full z-10">
+      <div className="w-full z-10 basis-11/12">
         <Img
           src="images/img_zmalllogos21.png"
-          className="h-[80px] object-cover"
+          className="absolute right-[20px] top-[20px] h-[60px] object-cover"
           alt="zmalllogosTwentyOne"
         />
         <Img
           src="images/img_profileee1.png"
-          className="bottom-[3%] h-[619px] object-cover"
+          className="absolute w-[45%] object-cover top-[40px] left-[47%]"
           alt="profileeeOne"
         />
       </div>
