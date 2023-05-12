@@ -112,12 +112,12 @@ const OrderHistoryPage = () => {
             <div className="bg-red_600 h-[450px] rounded-bl-[250px] rounded-br-none rounded-tl-[250px] rounded-tr-none w-full flex overflow-x-hidden pl-[20px]">
               <Img
                 src="images/img_dishsplashscreen2.png"
-                className="h-[400px] w-[700px] m-auto object-cover rounded-full mr-[10px] "
+                className="h-[400px] max-w-[500px] min-w-[400px] m-auto object-cover rounded-[100%] mr-[10px] "
                 alt="dishsplashscree_Two"
               />
               <Img
                 src="images/img_image1.png"
-                className="h-[400px] w-[400px] m-auto object-cover rounded-l-full"
+                className="h-[400px] w-[300px] m-auto object-cover rounded-l-full"
                 alt="imageOne_One"
               />
             </div>
@@ -197,8 +197,8 @@ const OrderHistoryPage = () => {
 
         <div className="flex flex-col items-center w-full" >
           <motion.div
-            initial={{ opacity: 0, y: 200}}
-            whileInView={{ opacity: 1, y: 0}}
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
           >
             <Text
               className="font-extrabold m-auto text-center text-red_600 w-auto"
@@ -255,7 +255,7 @@ const OrderHistoryPage = () => {
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
-                  transition={{ delay: 0.2 }}
+                  transition={{ delay: 0.1 }}
                 >
 
                   <Img
@@ -288,7 +288,7 @@ const OrderHistoryPage = () => {
               <motion.div className="absolute w-full flex justify-evenly mt-[120px]"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
-                
+
               >
                 <Img
                   src="images/img_dishsplashscreen2_2.png"
@@ -322,8 +322,34 @@ const OrderHistoryPage = () => {
         {/* end of order menu */}
 
 
+        {/* food sliding cart */}
+
+        <div className="flex justify-between h-[200px] w-full mt-[200px] bg-black">
+          <div className="w-[10%] h-full bg-red-600"></div>
+          <div className="flex">
+
+          </div>
+          <div className="w-[10%] h-full bg-red-600"></div>
+        </div>
+
+        {/* end of food sliding cart */}
+
+        {/* Go to add */}
+
+        <div className="h-[850px] w-full">
+          <Img
+            src="images/img_87781.png"
+            className="h-full w-full m-auto "
+            alt="87781_One"
+          />
+        </div>
+
+
+        {/* end of go to add */}
+
+
         <div className="flex flex-col md:px-5 w-full">
-          
+
           <div className="flex flex-col justify-start ml-20 md:ml-[0] mt-[54px] w-[96%] md:w-full">
             <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-[96%] md:w-full">
               <div className="h-[316px] relative w-[24%] md:w-full">
@@ -340,7 +366,7 @@ const OrderHistoryPage = () => {
                   />
                 </div>
               </div>
-              <List
+              {/* <List
                 className="sm:flex-col flex-row md:gap-10 gap-[119px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 w-[69%] md:w-full"
                 orientation="horizontal"
               >
@@ -380,9 +406,9 @@ const OrderHistoryPage = () => {
                     alt="rectangleFiftyNine_One"
                   />
                 </div>
-              </List>
+              </List> */}
             </div>
-            <div className="flex md:flex-col flex-row md:gap-5 items-start justify-end ml-auto w-[63%] md:w-full">
+            {/* <div className="flex md:flex-col flex-row md:gap-5 items-start justify-end ml-auto w-[63%] md:w-full">
               <Img
                 src="images/img_vector.svg"
                 className="h-[104px] md:mt-0 mt-[9px] w-auto"
@@ -436,8 +462,8 @@ const OrderHistoryPage = () => {
                   PASTRY
                 </Text>
               </div>
-            </div>
-            <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between md:ml-[0] ml-[60px] mt-9 w-[97%] md:w-full">
+            </div> */}
+            {/* <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between md:ml-[0] ml-[60px] mt-9 w-[97%] md:w-full">
               <List
                 className="sm:flex-col flex-row md:gap-10 gap-[119px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 w-[69%] md:w-full"
                 orientation="horizontal"
@@ -493,26 +519,28 @@ const OrderHistoryPage = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="h-[1065px] md:h-[1131px] md:ml-[0] ml-[5px] mt-[66px] relative w-[98%] md:w-full">
-              <Img
+              {/* <Img
                 src="images/img_87781.png"
                 className="h-[1065px] m-auto object-cover w-full"
                 alt="87781"
-              />
+              /> */}
               <div className="absolute h-[1065px] inset-[0] justify-center m-auto w-full">
-                <Img
+                {/* <Img
                   src="images/img_87781.png"
                   className="h-[1065px] m-auto object-cover w-full"
                   alt="87781_One"
-                />
-                <Img
+                /> */}
+                {/* <Img
                   src="images/img_vector.svg"
                   className="absolute bottom-[41%] h-[137px] right-[28%] w-auto"
                   alt="vector_One"
-                />
+                /> */}
               </div>
             </div>
+
+
             <div className="h-14 md:h-[214px] md:ml-[0] ml-[150px] mt-[158px] relative w-[22%]">
               <Text
                 className="m-auto text-black_900 text-center w-auto"
